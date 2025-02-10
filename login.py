@@ -14,6 +14,7 @@ URLS = [
     's.pkl'
     'pages/users.pkl'
     "app_final.py"
+    "users.json"
 ]
 
 for url in URLS:

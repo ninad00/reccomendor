@@ -1,6 +1,19 @@
 # Movie reccomendor system
 
-Overview
+Overview:
+This is a website that suggests movies to users based on their likings. It is based on Machine Learning algorithms that personalize choices of the user.
+
+Features
+
+Content-Based Filtering: Recommends movies based on similarities in genres, actors, and other metadata.
+
+Collaborative Filtering: Suggests movies based on user behavior and preferences.
+
+User Interface: Simple and interactive UI for searching and receiving recommendations.
+
+User Login and password encryption: Uses hashing techniques to further safeguard passwords
+
+Database Integration: Uses a dataset of movies, ratings, and user preferences.
 
 user example is id:2 and password:hi
                 id:1 and password:n

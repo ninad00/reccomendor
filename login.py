@@ -1,10 +1,15 @@
 import pickle
-
 import numpy as np
 import streamlit as st
 import json
 import bcrypt
 import os
+
+PICKLE_URLS = [
+    "https://example.com/file1.pkl",
+    "https://example.com/file2.pkl",
+    "https://example.com/file3.pkl"
+]
 
 
 if "verified" not in st.session_state:

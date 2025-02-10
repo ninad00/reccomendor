@@ -4,12 +4,36 @@ import streamlit as st
 import json
 import bcrypt
 import os
+import subprocess
+import gdown
 
-PICKLE_URLS = [
-    "https://example.com/file1.pkl",
-    "https://example.com/file2.pkl",
-    "https://example.com/file3.pkl"
+URLS = [
+    "pages/movies1.pkl",
+    "pages/df1.pkl",
+    "pages/df_fr_content.pkl"
+    's.pkl'
+    'pages/users.pkl'
+    "app_final.py"
 ]
+
+for url in URLS:
+    filename = url.split("/")[-1]  # Extract filename from URL
+    try:
+        subprocess.run(["wget", "-O", filename, url], check=True)
+        print(f"Downloaded: {filename}")
+    except subprocess.CalledProcessError:
+        print(f"Failed to download {url}")
+
+
+# Google Drive file ID (Extract from URL)
+file_id = "1POu4NYaDFTrizqjfRIsIfUQ9klA6CmUk"
+output_file = "s.pkl"
+
+# Download file
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output_file, quiet=False)
+
+print("Download completed!")
+
 
 
 if "verified" not in st.session_state:

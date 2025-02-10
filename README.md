@@ -3,7 +3,7 @@
 Overview:
 This is a website that suggests movies to users based on their likings. It is based on Machine Learning algorithms that personalize choices of the user.
 
-Features
+Features:
 
 Content-Based Filtering: Recommends movies based on similarities in genres, actors, and other metadata.
 
@@ -14,6 +14,15 @@ User Interface: Simple and interactive UI for searching and receiving recommenda
 User Login and password encryption: Uses hashing techniques to further safeguard passwords
 
 Database Integration: Uses a dataset of movies, ratings, and user preferences.
+
+
+Dataset:
+ Dataset consists of Movies with information like cast,crew,genres.
+ It also has ratings of users for movies of the database
+
+ Technologies used:
+ Programming Language: Python
+ Libraries: Pandas, NumPy, Scikit-learn, nltk,Streamlit,bcrypt
 
 user example is id:2 and password:hi
                 id:1 and password:n
